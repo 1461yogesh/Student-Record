@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body class="bg-slate-50 min-h-screen p-4 md:p-12">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-6">
+            <div>
+                <h1 class="text-4xl font-black text-slate-900 tracking-tight">Student Directory</h1>
+                <p class="text-slate-500 font-medium">Real-time database records</p>
+            </div>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <div class="relative">
+                    <input type="text" id="searchInput" placeholder="Search name or roll..." class="pl-10 pr-4 py-3 w-full sm:w-64 bg-white border border-slate-200 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none shadow-sm">
+                    <span class="absolute left-3 top-3.5 opacity-30">🔍</span>
+                </div>
+                <a href="../Registration Page/index.html" class="bg-indigo-600 text-white px-6 py-3 rounded-2xl font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-200 text-center">
+                    + Add Student
+                </a>
+            </div>
+        </div>
+
+        <div id="loading" class="flex flex-col items-center justify-center py-20">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mb-4"></div>
+            <p class="text-slate-400 font-medium">Fetching Records...</p>
+        </div>
+
+        <div id="emptyState" class="hidden text-center py-20 bg-white rounded-3xl border-2 border-dashed border-slate-200">
+            <p class="text-slate-400 text-lg">No matching students found in the database.</p>
+        </div>
+        
+        <div id="studentGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
