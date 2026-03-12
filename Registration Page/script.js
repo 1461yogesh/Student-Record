@@ -1,5 +1,5 @@
-const SUPABASE_URL = 'https://jmrwmeebfjgdwddrvkdb.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImptcndtZWViZmpnZHdkZHJ2a2RiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njk3NzgwNjYsImV4cCI6MjA4NTM1NDA2Nn0.YhFzelno7w737iish1ibmc8FfAykDfXBFwuwwzASVPU';
+const SUPABASE_URL = 'https://llohmowbrydowylmggjs.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imxsb2htb3dicnlkb3d5bG1nZ2pzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMzMTkwMjgsImV4cCI6MjA4ODg5NTAyOH0.QzCMvhrJZfjSJNyzn0iS9SGb0c0WDtTVWzt_qCVPoeU';
 const _supabase = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 document.getElementById('studentForm').addEventListener('submit', async (e) => {
@@ -31,4 +31,5 @@ document.getElementById('studentForm').addEventListener('submit', async (e) => {
     
     btn.disabled = false;
     btn.innerText = "Register Student";
+
 });
